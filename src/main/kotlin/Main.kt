@@ -1,7 +1,12 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.util.Scanner
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
-}
+fun main(args: Array<String>) {
+
+
+    val seconds = Scanner(System.`in`).nextInt()
+        val hours = seconds / 3600
+        val minutes = (seconds % 3600) / 60
+        val remainingSeconds = seconds % 60
+
+        println("$hours:$minutes:$remainingSeconds")
+    }
